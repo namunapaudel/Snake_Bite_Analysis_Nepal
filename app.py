@@ -13,7 +13,7 @@ st.markdown("---")
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("snake-bites-cases-and-deaths-nepal-2065-66-to-2073-74.csv")
+    df = pd.read_csv("Data/snake-bites-cases-and-deaths-nepal-2065-66-to-2073-74.csv")
     df['Death Percentage'] = (df['No. deaths'] / df['Total cases']) * 100
     df['Cure Rate'] = (df['Cure'] / df['Poisonous']) * 100
     return df
